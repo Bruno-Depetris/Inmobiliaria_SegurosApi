@@ -11,9 +11,9 @@ public partial class Barrio
 
     public int CiudadID { get; set; }
 
-    public short Estado { get; set; }
-
     public virtual Ciudade Ciudad { get; set; } = null!;
+
+    public string Estado { get; set; } = null!;
 
     public virtual ICollection<Propiedade> Propiedades { get; set; } = new List<Propiedade>();
 }
